@@ -1,0 +1,23 @@
+✔ CRUD completo
+✔ Autenticación real
+✔ Hash de contraseñas
+✔ Protección por sesión
+✔ Prevención XSS
+✔ Prevención SQL Injection
+✔ Bootstrap 5
+✔ Organización de proyecto
+
+
+para ingresar al backend:
+http://localhost/portafolio_crud/proyectos/index.php
+email: carlos@email.com
+contraseña: 1234
+
+En contraseña usamos password_verify(), para evitar contraseñas en texto plano y tener mas seguridad, por eso no usamos 1234 en MySQL sino el HASH.
+
+En PHP lo hacemos así: 
+password_hash('1234', PASSWORD_DEFAULT);
+
+y lo verificamos así:
+password_verify('1234', $2y$10$R62e.pyUULBTzXaTMAHxheVgsvctlkDMiiK61INnTFjJ4O0iEhdJ6
+);
